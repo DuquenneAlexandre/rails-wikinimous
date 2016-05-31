@@ -1,0 +1,12 @@
+<% @articles.each do |article| %>
+  <%= link_to article.title, article_path(article) %>
+<% end %>
+
+<% @articles.each do |task| %>
+  <h2><%= task.title %></h2>
+  <p><%= task.content %></p>
+<% end %>
+
+<% @articles.each do |article| %>
+  <%= link_to article.title, article_path(article) %>
+<% end %>
